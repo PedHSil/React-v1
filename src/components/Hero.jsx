@@ -23,17 +23,27 @@ export default function Hero() {
             <div className="relative order-2 w-full">
                 <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:2xl p-3 sm:p-4 shadow-2xl border border-white/10">
                     <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[350px] lg:h-[450px] border border-white/5">
-                        {/* Hero content */}
+
+                        {/* Header do bloco */}
                         <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                             <div className="flex items-center space-x-2">
                                 <div className="flex items-center space-x-1 sm:space-x-2">
-                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500 "/>
-                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500 "/>
-                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500 "/>
+                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500" />
+                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500" />
+                                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500" />
                                 </div>
                                 <span className="text-xs sm:text-sm text-gray-300">CodeFlow AI</span>
                             </div>
-                            <ChevronDown className="h-3 h-3 sm:w-4 sm-h:4 text-gray-400" />
+                            <ChevronDown className="h-3 sm:w-4 sm:h-4 text-gray-400" />
+                        </div>
+
+                        {/* AGORA SIM: BLOCOS DENTRO DO CONTAINER */}
+                        <div className="p-3 sm:p-4">
+                            <div className="flex space-x-1 sm:space-x-2 mb-3 sm:mb-4 overflow-hidden">
+                                <button className="px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-200 whitespace-nowrap">App.jsx</button>
+                                <button className="px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-200 whitespace-nowrap">Hero.jsx</button>
+                                <button className="px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border bg-white/5 text-gray-300 transition-all duration-200 whitespace-nowrap">Navbar.jsx</button>
+                            </div>
                         </div>
                     </div>
                 </div>
